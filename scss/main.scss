@@ -1,0 +1,182 @@
+@use './variables.scss' as *;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    background-color: $bg;
+}
+
+header {
+    max-width: 1440px;
+    width: 100%;
+    height: 800px;
+
+    .container_top {
+        display: flex;
+
+        &_logo {
+            width: 450px;
+            background-color: $black;
+
+            img {
+                margin: 189px auto auto 165px;
+            }
+        }
+    }
+
+    .container_top_hero {
+        position: relative;
+
+
+        .logo_img {
+            position: absolute;
+            left: -285px;
+            top: 185px;
+            width: 514px;
+        }
+
+        p {
+            width: 350px;
+            position: absolute;
+            top: 190px;
+            left: 475px;
+            font-family: $paragraph;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 32px;
+            color: $grey;
+        }
+
+        button {
+            width: 204px;
+            height: 72px;
+            font-family: $heading;
+            font-weight: 800;
+            font-size: 20px;
+            line-height: 24px;
+            letter-spacing: 3.63636px;
+            position: absolute;
+            top: 414px;
+            left: 475px;
+            background-color: $black;
+            color: $white;
+            text-transform: uppercase;
+
+            &:hover {
+                cursor: pointer;
+                background-color: $gold;
+                border: none;
+            }
+        }
+    }
+}
+
+main {
+    max-width: 1110px;
+    width: 100%;
+    margin: 180px 165px;
+
+    .grid_container {
+
+        h2 {
+            font-family: $heading;
+            font-weight: 900;
+            font-size: 60px;
+            line-height: 60px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-family: $paragraph;
+            font-weight: 300;
+            font-size: 22px;
+            line-height: 32px;
+            color: $grey;
+        }
+
+        &_first {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-column-gap: 125px;
+            margin-bottom: 30px;
+
+            h2 {
+                color: $black;
+            }
+        }
+
+        &_second {
+            display: grid;
+            grid-template-columns: 635px 455px;
+            grid-template-rows: 313px 377px;
+            grid-column-gap: 30px;
+            grid-row-gap: 30px;
+
+            .grid_box1 {
+                grid-row: 1/3;
+            }
+
+            .grid_box3 {
+                background-color: $black;
+
+                &_text {
+                    margin: 65px 48px;
+
+                    h2,
+                    p {
+                        color: $white;
+                    }
+
+                }
+
+            }
+
+        }
+    }
+}
+
+footer {
+    max-width: 1440px;
+    width: 100%;
+    height: 244px;
+    color: $white;
+    background-color: $black;
+
+    .container_bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 1110px;
+        height: 84px;
+        margin: 80px 165px auto 165px;
+
+        &_text {
+            width: 430px;
+
+            span {
+                font-family: $paragraph;
+                font-weight: 300;
+                font-size: 18px;
+                line-height: 28px;
+                color: $white;
+            }
+        }
+
+        .container_icons {
+            display: flex;
+            justify-content: space-between;
+            width: 100px;
+        }
+
+    }
+
+}
