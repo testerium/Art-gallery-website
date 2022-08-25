@@ -28,7 +28,10 @@ header {
             background-color: $black;
 
             img {
-                margin: 189px auto auto 165px;
+                position: absolute;
+                z-index: 1;
+                top: 189px;
+                left: 400px;
             }
         }
     }
@@ -39,9 +42,10 @@ header {
 
         .logo_img {
             position: absolute;
-            left: -285px;
+            left: -293px;
             top: 185px;
             width: 514px;
+            z-index: 0;
         }
 
         p {
@@ -70,6 +74,7 @@ header {
             background-color: $black;
             color: $white;
             text-transform: uppercase;
+            border: none;
 
             &:hover {
                 cursor: pointer;
@@ -77,7 +82,7 @@ header {
                 border: none;
             }
 
-            .button_arrow {
+            .button_arrow_right {
                 background-image: url(../assets/icon-arrow-right.svg);
                 background-repeat: no-repeat;
                 background-position: center;
@@ -85,7 +90,7 @@ header {
                 background-color: #D5966C;
                 height: 72px;
                 position: absolute;
-                top: -1px;
+                top: 0;
                 left: 202px;
 
                 &:hover {
@@ -109,6 +114,7 @@ main {
             font-size: 60px;
             line-height: 60px;
             text-transform: uppercase;
+            margin-bottom: 32px;
         }
 
         p {
@@ -191,6 +197,13 @@ footer {
             display: flex;
             justify-content: space-between;
             width: 100px;
+
+            img {
+                &:hover {
+                    cursor: pointer;
+                    background: $gold;
+                }
+            }
         }
 
     }
