@@ -76,6 +76,22 @@ header {
                 background-color: $gold;
                 border: none;
             }
+
+            .button_arrow {
+                background-image: url(../assets/icon-arrow-right.svg);
+                background-repeat: no-repeat;
+                background-position: center;
+                width: 56px;
+                background-color: #D5966C;
+                height: 72px;
+                position: absolute;
+                top: -1px;
+                left: 202px;
+
+                &:hover {
+                    background-color: $black;
+                }
+            }
         }
     }
 }
